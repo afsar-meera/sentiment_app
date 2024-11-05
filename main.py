@@ -13,7 +13,7 @@ def predict():
 
   data = request.get_json()
   text = data.get("text","")
-
+  print (text)
   if not text:
     return jsonify({"error": "no text provided"}), 400
   
